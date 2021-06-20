@@ -54,20 +54,19 @@
     \begin{beamercolorbox}[left]{title}
       \usebeamerfont{title}\textbf{\LARGE\inserttitle}\par%
       \ifx\insertsubtitle\@empty%
+      \vskip2em
       \else%
-        \vskip0.5em%
-        {\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\Large\insertsubtitle\par}%
+        \vskip1em%
+        {\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\textbf{\Large\insertsubtitle}\par}%
       \fi%
     \end{beamercolorbox}%
-    \vskip1.5em\par
-    \begin{beamercolorbox}[left]{author}
-      \usebeamerfont{author}\insertauthor
+    \vskip4em\par
+    \begin{beamercolorbox}[wd=.3\textwidth, ht=2.25ex,dp=1ex, left]{author}
+      \usebeamerfont{author}\textbf{\insertauthor} \\\vspace{0.5em} \textbf{\insertdate}
     \end{beamercolorbox}
-    \begin{beamercolorbox}[left]{date}
-      \usebeamerfont{date}\insertdate
+    \begin{beamercolorbox}[wd=\textwidth, ht=2.25ex,dp=1ex, right]{author}
+        \vspace{-1.5cm}{\usebeamercolor[fg]{titlegraphic}\inserttitlegraphic\par}
     \end{beamercolorbox}
-    \vskip3em\par
-    {\usebeamercolor[fg]{titlegraphic}\inserttitlegraphic\par}
   }
 }
 
@@ -113,6 +112,7 @@ showstringspaces=false            %
 \usepackage{libertine}
 % \usepackage{txfonts}
 % \usepackage{lmodern}
+\usepackage{helvet}
 
 % ---------- ---------- ---------- ---------- ---------- ----------
 
