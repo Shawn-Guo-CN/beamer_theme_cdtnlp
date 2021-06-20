@@ -3,11 +3,7 @@
 
 \mode<presentation>
 
-\setbeamercolor{section in head/foot}{parent=palette quaternary}
-\setbeamercolor{subsection in head/foot}{parent=palette primary}
-
-\setbeamercolor{author in head/foot}{parent=palette primary}
-\setbeamercolor{title in head/foot}{parent=palette primary}
+\setbeamercolor{foot line}{fg=bgblue,bg=lilywhite}
 
 
 \usesectionheadtemplate
@@ -19,10 +15,10 @@
   \leavevmode%
   \hbox{%
     % TODO: update the background clock of the following blocks
-    \begin{beamercolorbox}[wd=.9\paperwidth,ht=2.25ex,dp=1ex,left]{author in head/foot}%
-        \usebeamerfont{title in head/foot}\insertsection\hspace*{2ex}\insertsubsection
+    \begin{beamercolorbox}[wd=.9\paperwidth,ht=2.25ex,dp=1ex,left]{foot line}%
+        \usebeamerfont{title in head/foot}\quad\insertsection\hspace*{2ex}\insertsubsection
     \end{beamercolorbox}%
-    \begin{beamercolorbox}[wd=.1\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+    \begin{beamercolorbox}[wd=.1\paperwidth,ht=2.25ex,dp=1ex,center]{foot line}%
         \usebeamerfont{date in head/foot}
         \insertframenumber{} / \inserttotalframenumber\hspace*{2ex} 
     \end{beamercolorbox}
