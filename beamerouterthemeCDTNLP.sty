@@ -12,57 +12,19 @@
 \setbeamercolor{section in head/foot}{parent=palette quaternary}
 \setbeamercolor{subsection in head/foot}{parent=palette primary}
 
-\setbeamercolor{author in head/foot}{parent=section in head/foot}
-\setbeamercolor{title in head/foot}{parent=subsection in head/foot}
+\setbeamercolor{author in head/foot}{parent=palette primary}
+\setbeamercolor{title in head/foot}{parent=palette primary}
 
 
 \usesectionheadtemplate
   {\hfill\insertsectionhead}
   {\hfill\color{fg!50!bg}\insertsectionhead}
 
-%                                 % Head
-% \ifbeamer@compress
-% 
-% \defbeamertemplate*{headline}{split theme}
-% {%
-%   \leavevmode%
-%   \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.5ex,dp=1.125ex]{section in head/foot}%
-%     \insertsectionnavigationhorizontal{.5\paperwidth}{\hskip0pt plus1filll}{}%
-%   \end{beamercolorbox}%
-%   \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.5ex,dp=1.125ex]{subsection in head/foot}%
-%     \insertsubsectionnavigationhorizontal{.5\paperwidth}{}{\hskip0pt plus1filll}%
-%   \end{beamercolorbox}%
-% }
-% 
-% \else
-% 
-% \defbeamertemplate*{headline}{split theme}
-% {%
-%   \leavevmode%
-%   \@tempdimb=2.4375ex%
-%   \ifnum\beamer@subsectionmax<\beamer@sectionmax%
-%     \multiply\@tempdimb by\beamer@sectionmax%
-%   \else%
-%     \multiply\@tempdimb by\beamer@subsectionmax%
-%   \fi%
-%   \ifdim\@tempdimb>0pt%
-%     \advance\@tempdimb by 1.825ex%
-%     \begin{beamercolorbox}[wd=.5\paperwidth,ht=\@tempdimb]{section in head/foot}%
-%       \vbox to\@tempdimb{\vfil\insertsectionnavigation{.5\paperwidth}\vfil}%
-%     \end{beamercolorbox}%
-%     \begin{beamercolorbox}[wd=.5\paperwidth,ht=\@tempdimb]{subsection in head/foot}%
-%       \vbox to\@tempdimb{\vfil\insertsubsectionnavigation{.5\paperwidth}\vfil}%
-%     \end{beamercolorbox}%
-%   \fi%
-% }
-% 
-% \fi
-
-
 \addtobeamertemplate{footline}{}
 {
   \leavevmode%
   \hbox{%
+    % TODO: update the background clock of the following blocks
     \begin{beamercolorbox}[wd=.45\paperwidth,ht=2.25ex,dp=1ex,left]{author in head/foot}%
         \usebeamerfont{title in head/foot}\insertsection
     \end{beamercolorbox}%

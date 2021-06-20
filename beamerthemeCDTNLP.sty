@@ -16,13 +16,14 @@
 \useoutertheme{CDTNLP}
 
 \setbeamercolor*{titlelike}{parent=structure}
+\setbeamercolor{background canvas}{bg=bgblue}
 
 \setbeamertemplate{navigation symbols}{%
 }
 
 \setbeamertemplate{frametitle}{
 \begin{flushleft}
-\fontfamily{kurier}\selectfont{\insertframetitle}
+\fontfamily{default}\selectfont{\insertframetitle}
 \par
 \end{flushleft}
 }
@@ -33,13 +34,13 @@
  \setbeamercolor{background canvas}{bg=grizoo}
 \begin{frame}[c, plain, noframenumbering]
 \vspace{4cm}
-\fontfamily{kurier}\selectfont{\LARGE{\textcolor{white}{#2}}}
+\fontfamily{default}\selectfont{\textbf{\LARGE{\textcolor{white}{#2}}}}
 \end{frame}
 \endgroup
 }
 
 % Title / subtitle
-\renewcommand{\framesubtitle}[3][2cm]{\frametitle{\hspace{-#1}#2\\\hspace{#1}\large{\textcolor{beautyblue}{#3}}}}
+\renewcommand{\framesubtitle}[3][0.5cm]{\frametitle{\hspace{-#1}#2\\\hspace{#1}\large{\textcolor{white}{#3}}}}
 
 % For python code
 \usepackage{listings}
