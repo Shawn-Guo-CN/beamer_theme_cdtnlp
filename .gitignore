@@ -278,3 +278,4 @@ TSWLatexianTemp*
 # Shawn
 *tmp*
 ./vscode/
+.DS_Store

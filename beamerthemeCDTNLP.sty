@@ -22,7 +22,7 @@
 
 \setbeamertemplate{frametitle}{
 \begin{flushleft}
-    \textbf{\insertframetitle}
+   \hspace{-.5cm} \textbf{\insertframetitle}
 \par
 \end{flushleft}
 }
@@ -43,7 +43,33 @@
 \setbeamertemplate{section in toc}[circle]
 
 % Title / subtitle
-\renewcommand{\framesubtitle}[3][0.5cm]{\frametitle{\hspace{-#1}#2\\\hspace{#1}\large{\textcolor{white}{#3}}}}
+\renewcommand{\framesubtitle}[3][0cm]{\frametitle{\hspace{-#1}#2\\\hspace{#1}\large{\textcolor{white}{#3}}}}
+
+\titlegraphic{\hfill\raggedright\includegraphics[width=6cm]{logo.png}}
+\setbeamertemplate{title page}
+{
+  \vbox{
+    \centering
+    \vskip3.5em
+    \begin{beamercolorbox}[left]{title}
+      \usebeamerfont{title}\textbf{\LARGE\inserttitle}\par%
+      \ifx\insertsubtitle\@empty%
+      \else%
+        \vskip0.5em%
+        {\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\Large\insertsubtitle\par}%
+      \fi%
+    \end{beamercolorbox}%
+    \vskip1.5em\par
+    \begin{beamercolorbox}[left]{author}
+      \usebeamerfont{author}\insertauthor
+    \end{beamercolorbox}
+    \begin{beamercolorbox}[left]{date}
+      \usebeamerfont{date}\insertdate
+    \end{beamercolorbox}
+    \vskip3em\par
+    {\usebeamercolor[fg]{titlegraphic}\inserttitlegraphic\par}
+  }
+}
 
 % ---------- ---------- ---------- ---------- ---------- ----------
 % For python code
