@@ -27,10 +27,6 @@
 \end{flushleft}
 }
 
-\setbeamertemplate{itemize items}[circle]
-\setbeamertemplate{enumerate items}[circle]
-\setbeamertemplate{section in toc}[circle]
-
 % Plain slide for sections
 \newcommand{\plaintitle[2]}{
 \begingroup
@@ -41,6 +37,10 @@
 \end{frame}
 \endgroup
 }
+
+\setbeamertemplate{itemize items}[circle]
+\setbeamertemplate{enumerate items}[circle]
+\setbeamertemplate{section in toc}[circle]
 
 % Title / subtitle
 \renewcommand{\framesubtitle}[3][0.5cm]{\frametitle{\hspace{-#1}#2\\\hspace{#1}\large{\textcolor{white}{#3}}}}
@@ -83,8 +83,9 @@ showstringspaces=false            %
 \newcommand\pythoninline[1]{{\pythonstyle\lstinline!#1!}}
 
 % ---------- ---------- ---------- ---------- ---------- ----------
+\usepackage[T1]{fontenc}
 \usepackage{libertine}
-\usepackage{txfonts}
+% \usepackage{txfonts}
 % \usepackage{lmodern}
 
 % ---------- ---------- ---------- ---------- ---------- ----------
