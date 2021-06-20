@@ -2,30 +2,25 @@
 %% $%!TEX program = xelatex
 \usetheme{CDTNLP}
 
-\usepackage{nameref}
-\makeatletter
-\newcommand*{\currentname}{\@currentlabelname}
-\makeatother
-\AtBeginSection[]
-{
-\plaintitle{\currentname}
-}
-
 \begin{document}
 
-\title{\\\medskip \LARGE{A Very Brief Introduction to \\ the Syntactic Side of CCG} %}
+\title{\\\medskip \textbf{\LARGE{A Very Brief Introduction to \\ the Syntactic Side of CCG}}  %}
     \\\medskip
     \Large\textcolor{white}{For CDT-NLP Pizzer Club}}
     
 \author{\large{Shangmin Guo}}
 \date[\today]{\today} % {\today}
-% \institute{\normalsize{CDT-NLP, School of Informatics, University of Edinburgh}}
 
 \begin{frame}[plain, noframenumbering]
     \titlepage
 \end{frame}
 
-\section{Sec1}
+\begin{frame}[t]
+    \frametitle{Table of Content}
+    \tableofcontents
+\end{frame}
+
+\section{Section 1}
 
 \begin{frame}[t]
     \framesubtitle{Test Title}{Test Subtitle}
@@ -33,12 +28,26 @@
     test textcolor
 
     \begin{itemize}
-        \item test
+        \item itemize test
+        \begin{itemize}
+            \item nested itemize test
+        \end{itemize}
     \end{itemize}
+
+    \begin{enumerate}
+        \item enumerate test
+        \begin{enumerate}
+            \item nested enumerate test
+        \end{enumerate}
+    \end{enumerate}
 
     \begin{block}{Test Block}
         Test content
     \end{block}
+
+    \begin{equation}
+        test: \sum_{i} \int p_i(x)dx
+    \end{equation}
 
 \end{frame}
 
